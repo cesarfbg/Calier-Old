@@ -1,0 +1,19 @@
+p.contact-info {
+    padding: 5px 10px;
+    font-size: 14px;
+    position: absolute;
+    color: #697886;
+}
+
+.header-area .container .row {
+    padding-top: 15px;
+}
+
+@media (max-width: 1019px) {
+    p.contact-info {
+        display: none;
+    }
+    .header-area .container .row {
+        padding-top: 0px;
+    }
+}

@@ -1,0 +1,148 @@
+<div class="container">
+    <h2>{{ headerTitle }}</h2>
+    <br><br>
+
+    <div class="card">
+        <div class="card-body">
+            <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+
+                <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="productService.selectedProduct.$key">
+
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" #name="ngModel" [(ngModel)]="productService.selectedProduct.name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="brand">Marca</label>
+                        <input type="text" class="form-control" id="brand" name="brand" #brand="ngModel" [(ngModel)]="productService.selectedProduct.brand">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="relevance">Relevancia</label>
+                        <input type="text" class="form-control" id="relevance" name="relevance" #relevance="ngModel" [(ngModel)]="productService.selectedProduct.relevance">
+                    </div>
+                </div>
+
+                <div class="form-row text-center">
+
+                    <div class="form-group col-md-12">
+                        <label class="pull-left">Aplicaciones: </label>
+
+                        <label class="checkbox-inline aplications-options">
+                            <input 
+                                id="checkbox-app-carnicos"
+                                class="form-check-input"
+                                type="checkbox" 
+                                name="carnicos"
+                                [ngModel]="aplications?.carnicos"
+                                (ngModelChange)="aplications.carnicos = $event"
+                                > 
+                            <label for="checkbox-app-carnicos" class="form-check-label">Cárnicos</label>
+                        </label>
+
+                        <label class="checkbox-inline aplications-options">
+                            <input 
+                                id="checkbox-app-lacteos"
+                                class="form-check-input"
+                                type="checkbox" 
+                                name="lacteos"
+                                [ngModel]="aplications?.lacteos"
+                                (ngModelChange)="aplications.lacteos = $event"
+                                > 
+                            <label for="checkbox-app-lacteos" class="form-check-label">Lácteos</label>
+                        </label>
+
+                        <label class="checkbox-inline aplications-options">
+                            <input 
+                                id="checkbox-app-reposteria"
+                                class="form-check-input"
+                                type="checkbox" 
+                                name="repostria"
+                                [ngModel]="aplications?.reposteria"
+                                (ngModelChange)="aplications.reposteria = $event"
+                                > 
+                            <label for="checkbox-app-reposteria" class="form-check-label">Repostría</label>
+                        </label>
+
+                        <label class="checkbox-inline aplications-options">
+                            <input 
+                                id="checkbox-app-panificacion"
+                                class="form-check-input"
+                                type="checkbox" 
+                                name="panificacion"
+                                [ngModel]="aplications?.panificacion"
+                                (ngModelChange)="aplications.panificacion = $event"
+                                > 
+                            <label for="checkbox-app-panificacion" class="form-check-label">Panificación</label>
+                        </label>
+
+                        <label class="checkbox-inline aplications-options">
+                            <input 
+                                id="checkbox-app-confiteria"
+                                class="form-check-input"
+                                type="checkbox" 
+                                name="confiteria"
+                                [ngModel]="aplications?.confiteria"
+                                (ngModelChange)="aplications.confiteria = $event"
+                                > 
+                            <label for="checkbox-app-confiteria" class="form-check-label">Confitería</label>
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="custom-file">
+                            <label for="imageurl">Categorias</label>
+                            <select class="form-control" name="category" id="category" [(ngModel)]="productService.selectedProduct.category" #category="ngModel">
+                                <option value="Sin Categoria" selected="true">Seleccione la categoria</option>
+                                <optgroup *ngFor="let categoryList of categoryListArr|keyvalue" [label]="categoryList.key">
+                                    <option *ngFor="let category of categoryList.value|keyvalue" [value]="category.value">{{category.value}}</option>
+                                </optgroup>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <div class="custom-file">
+                            <label for="imageurl">URL Imagen del product</label>
+                            <input type="text" class="form-control" id="imageurl" name="imageurl" #imageurl="ngModel" [(ngModel)]="productService.selectedProduct.imageurl">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="videourl">URL Video del producto</label>
+                        <input type="text" class="form-control" id="videourl" name="videourl" #imageurl="ngModel" [(ngModel)]="productService.selectedProduct.videourl">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="shortDesc">Descripción corta</label>
+                        <textarea type="text" class="form-control" id="shortDesc" name="shortDesc" #shortDesc="ngModel" [(ngModel)]="productService.selectedProduct.shortDesc" cols="40" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="longDesc">Descripción Larga</label>
+                        <textarea type="text" class="form-control" id="longDesc" name="longDesc" #longDesc="ngModel" [(ngModel)]="productService.selectedProduct.longDesc" cols="40" rows="8" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group text-center">
+                    <button class="btn btn-secondary" type="reset" (click)="resetForm(productForm)">
+            <i class="fa fa-minus-circle"></i> Cancelar
+          </button> &nbsp;&nbsp;
+                    <button class="btn btn-primary" type="submit">
+            <i class="fa fa-plus-circle"></i> Guardar
+          </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>

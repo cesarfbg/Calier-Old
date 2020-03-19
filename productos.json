@@ -1,0 +1,187 @@
+{
+    "products": [{
+        "id": "001",
+        "name": "Aquagel Mp6348",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "002",
+        "name": "Aquagel Mp8820",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "003",
+        "name": "Arcon Plus 412",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "004",
+        "name": "Arcon Sm",
+        "categories": [
+            "Cárnico",
+            "Lácteo"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "005",
+        "name": "Arcon St",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "006",
+        "name": "Arcon T 171",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "007",
+        "name": "Calier Protecta Plus",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "008",
+        "name": "Calierplus Protein 001",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "009",
+        "name": "Calierplus Protein 002",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "010",
+        "name": "Cuajo Liquido Bixa X 0.5 Lt",
+        "categories": [
+            "Lácteo"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "011",
+        "name": "Cuajo Liquido Bixa X 1.0 Lt",
+        "categories": [
+            "Lácteo"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "012",
+        "name": "Dietary Soy Fiber - Hdf650",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "013",
+        "name": "Doscaplus Ba260",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "014",
+        "name": "Doscaplus Ba270",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "015",
+        "name": "Doscaron Ar120",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "016",
+        "name": "Doscaron Ar45",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "017",
+        "name": "Emulpro Ba352",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "018",
+        "name": "Emulpro Ba555",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "019",
+        "name": "Fumarato Ferroso Al 60%",
+        "categories": [
+            "Lácteo"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "020",
+        "name": "Pimienta Negra Molida X 25 Kg",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "021",
+        "name": "Pro-Fam 974",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "022",
+        "name": "Soy Dietary (Fibra China)",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "023",
+        "name": "Transglutaminasa",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "024",
+        "name": "Tvp 165-173",
+        "categories": [
+            "Cárnico"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "025",
+        "name": "Ultralec P Soy Lecithin",
+        "categories": [
+            "Lácteo"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }, {
+        "id": "026",
+        "name": "Versilac",
+        "categories": [
+            "Lácteo",
+            "Confitería"
+        ],
+        "shortDesc": "Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo."
+    }]
+}

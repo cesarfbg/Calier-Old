@@ -1,0 +1,31 @@
+<div class="container">
+    <h2> Lista de Productos</h2>
+    <a [routerLink]="[ '/admin/product-add' ]" class="btn btn-primary btn-sm pull-right add-item">Nuevo Producto</a>
+    <div class="item-list">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Fabricante</th>
+                    <th scope="col">Relevancia</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of productList; let i = index">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{product.name}}</td>
+                    <td>{{product.brand|titlecase}}</td>
+                    <td>{{product.relevance}}</td>
+                    <td>
+                        <a [routerLink]="[ '/producto/', product.$key ]" class="options-link text-primary"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        <a (click)="onEdit(product)" class="options-link text-secondary"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a (click)="onDelete(product.$key)" class="options-link text-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

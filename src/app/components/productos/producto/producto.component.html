@@ -1,0 +1,77 @@
+<section class="page">
+    <!-- ***** Page Top Start ***** -->
+    <ng-parallax img="assets/images/photos/parallax.jpg" [config]="{speed: .4, initialValue: 150}" class="ng-parallax-cover">
+        <div class="cover">
+            <div class="page-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>{{product?.name}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-parallax>
+
+    <!-- ***** Page Top End ***** -->
+
+    <!-- ***** Page Content Start ***** -->
+    <div class="page-bottom">
+        <div class="container">
+            <div class="row">
+                <!-- ***** Page Content Start ***** -->
+                <div class="col-lg-8 col-md-12 col-sm-12 mb-5" style="  width: 100%; background-repeat: no-repeat; background-image: url('./assets/images/photos/gradientcarnico.jpg');">
+                    <div class="page-detail">
+                        <div class="row justify-content-center">
+                            <p class="display-3 text-white mt-5 pt-5 text-center px-4">{{ product.name }}</p>
+                        </div>
+                        <div class="row pb-5">
+                            <!-- <img src="./assets/images/isotipo-negativo.png" class="img-fluid m-auto pb-3"> -->
+                        </div>
+                        <!-- <div class="image">
+                            <img src="./assets/images/photos/placeholder_img_product.png" class="img-fluid" width="100%">
+                        </div> -->
+                        <!-- <hr> -->
+                    </div>
+                </div>
+                <!-- ***** Page Content End ***** -->
+
+                <!-- ***** Aside Start ***** -->
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <aside class="default-aside">
+                        <div class="sidebar">
+                            <ul>
+                                <li class="active"><a>Fabricante del Producto</a></li>
+                                <li><a>{{product?.brand | uppercase}}</a></li>
+                                <li class="active"><a>Plataforma de Negocio del Producto</a></li>
+                                <li *ngFor="let aplication of product?.aplications | keyvalue">
+                                    <a *ngIf="aplication.value">
+                                        Cárnicos
+                                        <!-- {{aplication.key | titlecase}} -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <!-- ***** Aside End ***** -->
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <!-- <h4>Definición</h4> -->
+                <!-- <hr> -->
+                <p class="text-justify">{{ definicion }}</p>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <h4>Propuesta de valor</h4>
+                <hr>
+                <ul>
+                    <li *ngFor="let ventaja of ventajas">
+                        - {{ ventaja | titlecase }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Page Content End ***** -->
+</section>

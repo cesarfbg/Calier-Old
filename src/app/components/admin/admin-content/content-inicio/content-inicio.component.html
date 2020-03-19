@@ -1,0 +1,135 @@
+<form #contentInicioForm="ngForm" (ngSubmit)="onSubmit(contentInicioForm)">
+
+    <div class="admin-form-row">
+        <h5>Header</h5>
+        <div class="form-group col-md-12">
+            <label for="header-title">Título</label>
+            <input type="text" class="form-control" id="header-title" name="headerTitle" [ngModel]="contentInicioItems?.header.title" (ngModelChange)="contentInicioItems.header.title = $event">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="header-desc">Descripción</label>
+            <textarea type="text" class="form-control" id="header-desc" name="headerDesc" [ngModel]="contentInicioItems?.header.desc" (ngModelChange)="contentInicioItems.header.desc = $event" cols="40" rows="3">
+            </textarea>
+        </div>
+    </div>
+
+    <div class="admin-form-row">
+        <h5>Aplicaciones</h5>
+        <div class="form-group col-md-12">
+            <label for="aplications-title">Título</label>
+            <input type="text" class="form-control" id="aplications-title" name="aplicationsTitle" [ngModel]="contentInicioItems?.aplications.title" (ngModelChange)="contentInicioItems.aplications.title = $event">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="aplications-desc">Descripción</label>
+            <textarea type="text" class="form-control" id="aplications-desc" name="aplicationsDesc" [ngModel]="contentInicioItems?.aplications.desc" (ngModelChange)="contentInicioItems.aplications.desc = $event" cols="40" rows="3">
+            </textarea>
+        </div>
+    </div>
+
+    <div class="admin-form-row">
+        <h5>Parallax 1</h5>
+        <div class="form-group col-md-12">
+            <label for="parallax-first-title">Contenido</label>
+            <input type="text" class="form-control" id="parallax-first-title" name="parallaxFirstTitle" [ngModel]="contentInicioItems?.parallaxfirst.title" (ngModelChange)="contentInicioItems.parallaxfirst.title = $event">
+        </div>
+    </div>
+
+    <div class="admin-form-row">
+        <h5>Productos</h5>
+        <div class="form-group col-md-12">
+            <label for="products-title">Título</label>
+            <input type="text" class="form-control" id="products-title" name="productsTitle" [ngModel]="contentInicioItems?.products.title" (ngModelChange)="contentInicioItems.products.title = $event">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="products-desc">Descripción</label>
+            <textarea type="text" class="form-control" id="products-desc" name="productsDesc" [ngModel]="contentInicioItems?.products.desc" (ngModelChange)="contentInicioItems.products.desc" cols="40" rows="3"></textarea>
+        </div>
+    </div>
+
+    <!-- <div class="admin-form-row">
+        <h5>Parallax 2</h5>
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="parallax-second-title">Contador 1</label>
+                <input type="text" class="form-control" id="parallax-second-title" name="parallaxSecondTitle" [ngModel]="contentInicioItems?.parallaxsecond.title" (ngModelChange)="contentInicioItems.parallaxsecond.title">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="header-title">Subtítulo 1</label>
+                <input type="text" class="form-control" id="" name="parallaxSecondTitle" [ngModel]="contentInicioItems?.var.attr" (ngModelChange)="contentInicioItems.var.attr">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="header-title">Contador 2</label>
+                <input type="text" class="form-control" id="" name="parallaxSecondTitle" [ngModel]="contentInicioItems?.var.attr" (ngModelChange)="contentInicioItems.var.attr">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="header-title">Subtítulo 2</label>
+                <input type="text" class="form-control" id="" name="parallaxSecondTitle" [ngModel]="contentInicioItems?.var.attr" (ngModelChange)="contentInicioItems.var.attr">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="header-title">Contador 3</label>
+                <input type="text" class="form-control" id="" name="parallaxSecondTitle" [ngModel]="contentInicioItems?.var.attr" (ngModelChange)="contentInicioItems.var.attr">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="header-title">Subtítulo 3</label>
+                <input type="text" class="form-control" id="" name="parallaxSecondTitle" [ngModel]="contentInicioItems?.var.attr" (ngModelChange)="contentInicioItems.var.attr">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="header-title">Contador 4</label>
+                <input type="text" class="form-control" id="" name="parallaxSecondTitle" [ngModel]="contentInicioItems?.var.attr" (ngModelChange)="contentInicioItems.var.attr">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="header-title">Subtítulo 4</label>
+                <input type="text" class="form-control" id="" name="parallaxSecondTitle" [ngModel]="contentInicioItems?.var.attr" (ngModelChange)="contentInicioItems.var.attr">
+            </div>
+        </div>
+    </div> -->
+
+    <div class="admin-form-row">
+        <h5>Socios</h5>
+        <div class="form-group col-md-12">
+            <label for="partners-title">Título</label>
+            <input type="text" class="form-control" id="partners-title" name="partnersTitle" [ngModel]="contentInicioItems?.partners.title" (ngModelChange)="contentInicioItems.partners.title">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="partners-desc">Descripción</label>
+            <textarea type="text" class="form-control" id="partners-desc" name="partnersDesc" [ngModel]="contentInicioItems?.partners.desc" (ngModelChange)="contentInicioItems.partners.desc" cols="40" rows="3"></textarea>
+        </div>
+    </div>
+
+    <div class="admin-form-row">
+        <h5>Blog</h5>
+        <div class="form-group col-md-12">
+            <label for="blog-title">Título</label>
+            <input type="text" class="form-control" id="blog-title" name="blogTitle" [ngModel]="contentInicioItems?.blog.title" (ngModelChange)="contentInicioItems.blog.title">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="blog-desc">Descripción</label>
+            <textarea type="text" class="form-control" id="blog-desc" name="blogDesc" [ngModel]="contentInicioItems?.blog.desc" (ngModelChange)="contentInicioItems.blog.desc" cols="40" rows="3"></textarea>
+        </div>
+    </div>
+
+
+    <div class="form-group text-center">
+        <button class="btn btn-secondary" type="reset" (click)="resetForm(contentInicioForm)">
+      <i class="fa fa-minus-circle"></i> Cancelar
+    </button> &nbsp;&nbsp;
+
+        <button class="btn btn-primary" type="submit">
+      <i class="fa fa-plus-circle"></i> Guardar
+    </button>
+    </div>
+
+</form>

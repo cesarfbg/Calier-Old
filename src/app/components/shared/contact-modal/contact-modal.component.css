@@ -1,0 +1,39 @@
+.sticky-contact{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding-top: 12px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #0056b3;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.modal-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 700px) {
+    .sticky-contact{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-gradient {
+        color: #394c5d;
+        background: #FFF;
+    }
+}

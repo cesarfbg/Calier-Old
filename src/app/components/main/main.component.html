@@ -1,0 +1,527 @@
+<div class="container pt-5 mt-3">
+    <div class="row mt-5 pt-xl-5 pt-lg-5 pt-sm-0 pt-md-0 text-center">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+            <h1 class="mb-5">{{ contentInicioItems?.header.title }}</h1>
+            <p class="text-justify mb-5">{{ contentInicioItems?.header.desc }}</p>
+
+            <button type="button" class="mb-5 btn btn-lg btn-gradient btn-rounded about-more" data-toggle="modal" data-target="#contactModal">
+                ¿Quieres saber más?
+            </button>
+        </div>
+        <div class="col text-center">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nyYiE3SurYs?autoplay=1&showinfo=0&controls=0&rel=0&iv_load_policy=3" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="welcome-area" id="welcome">
+    <div class="right-bg">
+        <img src="./assets/images/photos/header.jpg" class="img-fluid float-right" alt="">
+    </div>
+
+    <div class="header-hexagon-bg">
+        <img src="./assets/images/header-bg.svg" class="img-fluid" alt="">
+    </div>
+
+    <div class="header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <h1>{{ contentInicioItems?.header.title }}</h1>
+                    <p>{{ contentInicioItems?.header.desc }}</p>
+
+                    <button type="button" class="btn btn-lg btn-gradient btn-rounded about-more" data-toggle="modal" data-target="#contactModal">
+                        ¿Quieres saber más?
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- ***** Welcome Area End ***** -->
+
+<!-- ***** Pricing Plans Start ***** -->
+<section class="section white" id="pricing-plans">
+    <!-- ***** Section Title Start ***** -->
+    <div class="">
+        <div class="col-lg-12">
+            <div class="center-heading">
+                <h2 class="section-title">{{ contentInicioItems?.aplications.title }}</h2>
+            </div>
+        </div>
+        <div class="offset-lg-3 col-lg-6">
+            <div class="center-text">
+                <p>{{ contentInicioItems?.aplications.desc }}</p>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Section Title End ***** -->
+    <app-aplicaciones-cards></app-aplicaciones-cards>
+</section>
+<!-- ***** Pricing Plans End ***** -->
+
+<!-- ***** API Parallax Start ***** -->
+
+<ng-parallax img="assets/images/photos/parallax.jpg" [config]="{speed: .4, initialValue: 700}" class="ng-parallax">
+    <section class="parallax">
+        <div class="parallax-content">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-8">
+                        <div class="info">
+                            <p>{{ contentInicioItems?.parallaxfirst.title }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</ng-parallax>
+
+<!-- ***** API Parallax End ***** -->
+
+<!-- ***** Features Small Start ***** -->
+<section class="section" id="features">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">{{ contentInicioItems?.products.title }}</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>{{ contentInicioItems?.products.desc }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <app-productos-cards moreProducts="true"></app-productos-cards>
+
+    </div>
+</section>
+<!-- ***** Features Small End ***** -->
+
+
+<!-- ***** Features Big Item Start ***** -->
+<section class="section white padding-bottom-top-60 bg-center-left" id="centro-investigaciones">
+        <div class="container">
+            <div class="center-heading">
+                <h2 class="section-title" style="font-size:38px">Centro de Investigación e Innovación</h2>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+                    <div class="left-heading">
+                        <h2 class="section-title">Un lugar hecho para <span style="color: #4278E5"> innovar</span></h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Nuestro Centro de Investigación e Innovación es lugar ideal para el estudio y puesta en marcha de diferentes proyectos que pequeñas o medianas empresas busquen <span style="color: #4278E5">desarrollar y mejorar</span> día a día.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/photos/features/carnicos.jpg" class="img-fluid float-left" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section white padding-bottom-top-60 border-bottom bg-center-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center mobile-bottom-fix" data-scroll-reveal="enter right move 30px over 0.6s after 0.3s">
+                    <img src="assets/images/photos/features/lacteos.jpg" class="img-fluid float-left" alt="App">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+                    <div class="left-text">
+                        <p>El Centro de Investigación e Innovación cuenta todos los elementos para hacer desarrollo, bajar los costos de producción, <span style="color: #4278E5">mejorar la calidad de productos</span> y hacer innovación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section white padding-bottom-top-60 bg-center-left" id="centro-investigaciones">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+                    <div class="left-heading">
+                        <h2 class="section-title">Resaltando sobre la competencia</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Adaptarse a las nuevas condiciones del mercado no es tarea fácil. El reto es lograr un producto cárnico o lácteo de <span style="color: #4278E5">buena calidad a bajo costo</span>, algo que solo se logra con investigación y desarrollo. Esto constituye una gran apuesta por la competitividad que les permite las pymes equilibrar la balanza de participación de mercado frente a los grandes productores al ubicar sus productos en estos supermercados. </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/photos/features/control.jpg" class="img-fluid float-left" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section white padding-bottom-top-60 border-bottom bg-center-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center mobile-bottom-fix" data-scroll-reveal="enter right move 30px over 0.6s after 0.3s">
+                    <img src="assets/images/photos/features/investigacion.jpg" class="img-fluid float-left" alt="App">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+                    <div class="left-heading">
+                        <h2 class="section-title"><span style="color: #4278E5">Misión</span></h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Calier es una compañía fundada en el año 2009, dedicada a comercializar, distribuir, desarrollar y producir ingredientes alimenticios para: <br> <span>- Cárnicos <br> - Lácteos <br> - Panificación y Repostería</span> <br><br>     Con el objetivo de: <br><span>- Mejorar el valor nutricional <br>- Potencializar la calidad <br>- Mejorar costos</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section white padding-bottom-top-60 bg-center-left" id="centro-investigaciones">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+                    <div class="left-heading">
+                        <h2 class="section-title"><span style="color: #4278E5">Visión</span></h2>
+                    </div>
+                    <div class="left-text">
+                        <p>En el 2020, Calier Internacional de Colombia alcanzará: <br><span>- Ventas de USD 10 millones de dólares <br>- Un  ROE (return on equity) +10% <br>- Convertirse en el principal socio y amigo  de nuestros clientes y  representadas.</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/photos/features/cocina.jpg" class="img-fluid float-left" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ***** Features Big Item End ***** -->
+
+<!-- ***** Counter Parallax Start ***** -->
+    <!-- <section class="parallax-counter">
+        <div class="parallax-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item">
+                            <strong>+130</strong>
+                            <span>Clientes<br>Satisfechos</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item">
+                            <strong>+50</strong>
+                            <span>Investigaciones<br>Exitosas</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item">
+                            <strong>+30</strong>
+                            <span>Productos<br>Desarrollados</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item">
+                            <strong>+50</strong>
+                            <span>Empresas<br>Impulsadas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+<!-- ***** Counter Parallax End ***** -->
+
+<!-- ***** Testimonials Start ***** -->
+<section class="section" id="testimonials">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">{{ contentInicioItems?.partners.title }}</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>{{ contentInicioItems?.partners.desc }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <div class="row testimonials-wrapper">
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="http://www.calier.com/" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/grupo_calier.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/grupo_calier.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Grupo Calier</h3>
+                            <span style="font-style: italic;">"Mantenemos un compromiso global con la salud animal"</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="http://www.indukern.com/web/guest/home" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/indukern.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/indukern.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Indukern</h3>
+                            <span style="font-style: italic;">"Acceso privilegiado a nuevos ingredientes de alta calidad"</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="http://www.productosbixa.com/" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/bixa.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Productos Bixa</h3>
+                            <span style="font-style: italic;">"Ofrecer un alto nivel de calidad que ayude a crecer y prosperar"</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="https://www.adm.com/" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/adm.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">ADM</h3>
+                            <span style="font-style: italic;">"Con una cartera incomparable de ingredientes y sistemas, ADM puede ayudarlo desde la planta hasta el emplatado"</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="https://www.doscadesa.com/" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/doscadesa.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Doscadesa</h3>
+                            <span style="font-style: italic;">"Doscadesa, la fórmula del éxito"</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="http://www.ensissciences.com/food.html" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/ensis.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Ensis</h3>
+                            <span style="font-style: italic;">"Producción de fórmulas funcionales basadas en enzimas, proteínas, hidrocoloides y microorganismos."</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="http://www.ingredients-solutions.com/" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/is.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Ingredient Solutions</h3>
+                            <span style="font-style: italic;">"IS es una empresa dedicada a proveer soluciones integrales para la elaboración de productos alimenticios."</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="http://www.marcelcarrageenan.com/es/index.html" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/marcel_carrageenan.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Marcel Carrageenan</h3>
+                            <span style="font-style: italic;">"Marcel Trading Corporation es una empresa de origen filipino dedicada a la fabricación y exportación de carrageninas y productos derivados de algas."</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="https://www.proliantbiologicals.com/" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/proliant.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Proliant Biologicals</h3>
+                            <span style="font-style: italic;">"Estamos dedicados al avance de la salud humana y animal a través de la innovación de productos novedosos para las industrias de ciencias de la vida y biotecnología."</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="https://www.ticgums.com/" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/ticgums.jpg" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Ticgums</h3>
+                            <span style="font-style: italic;">"Soluciones de textura y estabilización para la industria alimentaria."</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+
+            <!-- ***** Testimonials Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="https://www.watson-inc.com/" target="_blank">
+                    <div class="testimonials-item">
+                        <div class="hexagon-user">
+                            <div class="hexagon-user-img">
+                                <div class="hexagon-in1">
+                                    <img src="assets/images/photos/partners/watson.png" class="hexagon-in2">
+                                    <!-- <div class="hexagon-in2" data-profile-img="assets/images/photos/partners/bixa.png"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-content">
+                            <h3 class="user-name">Watson Inc.</h3>
+                            <span style="font-style: italic;">"Resolución Creativa De Problemas Para Los Retos De Fabricación De Alimentos."</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- ***** Testimonials Item End ***** -->
+        </div>
+    </div>
+</section>
+<!-- ***** Testimonials End ***** -->
+
+
+<!-- ***** Blog Start ***** -->
+<section class="section white bg-center-left" id="blog">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title"><a [routerLink]="[ '/blog' ]">{{ contentInicioItems?.blog.title }}</a></h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>{{ contentInicioItems?.blog.desc }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <app-post-thumb></app-post-thumb>
+        
+    </div>
+</section>
+<!-- ***** Blog End ***** -->

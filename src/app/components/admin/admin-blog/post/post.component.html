@@ -1,0 +1,68 @@
+<div class="container">
+    <h2>Nuevo Post</h2>
+    <br><br>
+
+    <div class="card">
+        <div class="card-body">
+            <form #postForm="ngForm" (ngSubmit)="onSubmit(postForm)">
+
+                <input type="hidden" name="key" #key="ngModel" [(ngModel)]="post.key">
+                <input type="hidden" name="createdAt">
+
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="title">Titulo:</label>
+                        <input type="text" class="form-control" id="title" name="title" [(ngModel)]="post.title" placeholder="Título del post">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="author">Autor:</label>
+                        <input type="text" class="form-control" id="author" name="author" [(ngModel)]="post.author" placeholder="Autor del post">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="tags">Tags:</label>
+                        <input type="text" class="form-control" id="tags" name="tags" [(ngModel)]="post.tags" placeholder="Tecnología;Novedades;Innovación">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="Status">Status:</label>
+                        <button *ngIf="post.public" (click)="post.public = false" class="btn btn-outline-success w-100" type="button">
+                            <i class="fa fa-eye"></i>
+                            Público
+                        </button>
+                        <button *ngIf="!post.public" (click)="post.public = true" class="btn btn-outline-danger w-100" type="button">
+                            <i class="fa fa-eye-slash"></i>
+                            Privado
+                        </button>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="Status">URL Imagen principal:</label>
+                        <input type="text" class="form-control" id="" name="image" [(ngModel)]="post.image">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="Status">URL Imagen adicional (opcional):</label>
+                        <input type="text" class="form-control" id="" name="secondaryImage" [(ngModel)]="post.images">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="shortDesc">Descripción corta</label>
+                        <textarea type="text" class="form-control" id="shortDesc" name="shortDesc" [(ngModel)]="post.shortDesc" cols="40" rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="longDesc">Descripción larga</label>
+                        <textarea type="text" class="form-control" id="longDesc" name="longDesc" [(ngModel)]="post.longDesc" cols="40" rows="10"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="form-group text-center">
+                    <button class="btn btn-secondary" type="reset" (click)="resetForm(postForm)">
+          <i class="fa fa-minus-circle"></i> Cancelar
+        </button> &nbsp;&nbsp;
+                    <button class="btn btn-primary" type="submit">
+          <i class="fa fa-plus-circle"></i> Guardar
+        </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>

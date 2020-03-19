@@ -1,0 +1,16 @@
+a.navlinkbtn {
+    padding: 10px 15px;
+    color: #FFF;
+}
+
+a.navlinkbtn:hover {
+    color: #FFF;
+}
+
+.section-admin {
+    margin-bottom: 30px;
+}
+
+.section-admin h2 {
+    padding-bottom: 20px;
+}

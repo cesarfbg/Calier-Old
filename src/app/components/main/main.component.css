@@ -1,0 +1,17 @@
+.btn-rounded {
+    border-radius: 50px!important;
+}
+
+.btn-gradient {
+    color: #FFF;
+    background-image: linear-gradient(135deg, #0FB4E5 0%, #743FE5 100%);
+}
+
+.contact-bottom {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.about-more {
+    margin: auto;
+}

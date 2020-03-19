@@ -1,0 +1,44 @@
+<!-- ***** Header Area Start ***** -->
+<header class="header-area">
+    <div class="container">
+        <p class="contact-info">
+            <i class="fa fa-envelope"></i> info&#64;<strong class="text-secondary">caliercolombia</strong>.com &nbsp;&nbsp;
+            <i class="fa fa-phone"></i> (57-1) 8697790
+            <i class="fa fa-dollar ml-3"></i> <b>TRM Hoy: ${{ trmPromedio }}</b>
+        </p>
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a [routerLink]="[ '/inicio' ]" class="logo navLink">
+                        <img src="assets/images/logo_calier.png" height="35" alt="Calier" />
+                    </a>
+                    <!-- ***** Logo End ***** -->
+
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a [routerLink]="[ '/inicio' ]" class="navLink">Inicio</a></li>
+                        <li class="submenu">
+                            <a>Productos</a>
+                            <ul>
+                                <li><a [routerLink]="[ '/aplicaciones' ]" class="navLink">Plataforma de Negocio</a></li>
+                                <li><a [routerLink]="[ '/productos' ]" class="navLink">Lista de Ingredientes</a></li>
+                            </ul>
+                        </li>
+                        <li><a [routerLink]="[ '/centro-de-investigaciones' ]" class="navLink">Centro de Investigaciones</a></li>
+                        <li><a [routerLink]="[ '/blog' ]" class="navLink">Blog</a></li>
+                        <li><a [routerLink]="[ '/nosotros' ]" class="navLink">Nosotros</a></li>
+                        <li><a [routerLink]="[ '/contacto' ]" class="navLink">Contacto</a></li>
+                        <!-- <li><a [routerLink]="[ '/admin' ]" class="navLink"><i class="fa fa-lock" aria-hidden="true"></i> Admin</a></li> -->
+                        <!-- <li><a href="#" class="btn-nav-line navLink"><span>Club Calier</span></a></li> -->
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->

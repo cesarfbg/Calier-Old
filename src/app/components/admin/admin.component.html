@@ -1,0 +1,86 @@
+<section class="page">
+    <section class="white bg-center-left">
+
+        <!-- ***** Page Top Start ***** -->
+        <ng-parallax img="assets/images/photos/parallax.jpg" [config]="" class="ng-parallax-cover">
+            <div class="cover">
+                <div class="page-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1>Panel de Administración</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-parallax>
+
+        <!-- ***** Page Top End ***** -->
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="btn-group-vertical" role="group" aria-label="Basic example">
+
+                        <a [routerLink]="[ '/admin' ]" class="btn btn-secondary navlinkbtn"><i class="fa fa-lock" aria-hidden="true"></i> Admin</a>
+                        <a [routerLink]="[ 'products' ]" class="btn btn-secondary navlinkbtn"><i class="fa fa-tag"></i> Productos</a>
+                        <a [routerLink]="[ '/admin/blog' ]" class="btn btn-secondary navlinkbtn"><i class="fa fa-paperclip"></i> Blog</a>
+
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-align-center"></i> Contenido
+                    </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item" [routerLink]="[ '/admin/content/inicio' ]">Inicio</a>
+                                <a class="dropdown-item" [routerLink]="[ '/admin/content/productos' ]">Productos</a>
+                                <a class="dropdown-item" [routerLink]="[ '/admin/content/aplicaciones' ]">Aplicaciones</a>
+                                <a class="dropdown-item" [routerLink]="[ '/admin/content/centro-de-investigaciones' ]">Centro de Investigaciones</a>
+                                <a class="dropdown-item" [routerLink]="[ '/admin/content/blog' ]">Blog</a>
+                                <a class="dropdown-item" [routerLink]="[ '/admin/content/nosotros' ]">Nosotros</a>
+                                <a class="dropdown-item" [routerLink]="[ '/admin/content/contacto' ]">Contacto</a>
+                            </div>
+                        </div>
+
+                        <a [routerLink]="[ '/admin/logout' ]" class="btn btn-secondary navlinkbtn"> <i class="fa fa-sign-out"></i> Salir</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-9 col-sm-12">
+
+                    <div class="section-admin container" *ngIf="router.url == '/admin'">
+                        <h2 class="section-title">Ajustemos las cosas</h2>
+
+                        <p class="text-justify">
+                            Bienvenido/a al panel de administración. En esta sección podrás realizar los cambios y ajustes en el contenido que presenta la pagina web.
+                        </p>
+                        <br>
+
+                        <p class="text-justify">
+                            En la sección de <strong><i class="fa fa-tag"></i> Productos</strong> se encuentra el área de gestión de productos, donde se agrega, edita o elimina cualquiera de ellos.
+                        </p>
+
+                        <br>
+
+                        <p class="text-justify">
+                            Seguido se encuentra <strong><i class="fa fa-paperclip"></i> Blog</strong>, donde se gestiona las diferentes entradas del blog de Calier. Cada entrada tiene sus diferentes campos incluyendo uno llamado <i>Status</i> que determina
+                            si la entrada se muestra o no al público general.
+                        </p>
+
+                        <br>
+
+                        <p class="text-justify">
+                            Por último la sección <strong><i class="fa fa-align-center"></i> Contenido</strong> que será el area de administración de contenido que se muestra en cada pestaña del sitio web Calier. Para cada sub-sección se encuentra los
+                            diferentes campos para una perzonalización mas detallada permitiendo mejoras cuando se requiera.
+                        </p>
+                    </div>
+
+                    <router-outlet></router-outlet>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+</section>

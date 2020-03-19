@@ -1,0 +1,48 @@
+<div class="container">
+    <h2>Entradas del blog</h2>
+    <a routerLink="/admin/post/add" class="btn btn-primary btn-sm pull-right add-item">Nuevo Post</a>
+    <div class="item-list">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Tags</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of postList">
+                    <td>{{ post.title }}</td>
+                    <td>{{ post.author }}</td>
+                    <td>
+                        <ng-template [ngIf]="post.public" [ngIfElse]="private">
+                            <span class="badge badge-success">
+                                Público
+                            </span>
+                        </ng-template>
+
+                        <ng-template #private>
+                            <span class="badge badge-danger">
+                                Privado
+                            </span>
+                        </ng-template>
+                    </td>
+                    <td>
+                        <span *ngFor="let tag of post.tags.split(';'); let i = index">
+                            <span  class="badge badge-secondary badge-cats" *ngIf="i<3">
+                                {{tag}}
+                            </span>
+                        </span>
+                    </td>
+                    <td>
+                        <a class="options-link text-primary"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        <a [routerLink]="['/admin/post', post.key]" class="options-link text-secondary"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a (click)="onDelete(post.$key)" class="options-link text-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

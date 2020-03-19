@@ -1,0 +1,88 @@
+<div class="contact-form">
+    <form>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+          <label for="nombre_apellido">Nombre y Apellido:</label>
+          <input type="text" id="nombre_apellido" placeholder="Nombre y Apellido" required>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+          <label for="empresa">Empresa:</label>
+          <input type="text" id="empresa" placeholder="Mi Empresa">
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" placeholder="+57 123 1234567">
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-5">
+          <label for="telefono">Departamento:</label>
+          <select class="form-control" (change)="handleChange($event.target.value)">
+              <option>Seleccione</option>
+              <option [value]="department.id" 
+                      *ngFor="let department of departments"
+                      >{{ department.departamento }}</option>
+          </select>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-5">
+          <label for="telefono">Ciudad:</label>
+          <select class="form-control">
+              <option value="">Seleccione</option>
+              <option [ngValue]="city.key"
+                      *ngFor="let city of cities|keyvalue"
+                      >{{city.value}}</option>
+          </select>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+          <label for="email">Correo Electrónico:</label>
+          <input type="text" id="email" placeholder="alguien@mail.com">
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+          <label for="validar_email">Confirmar Correo:</label>
+          <input type="email" id="validar_email" placeholder="alguien@mail.com">
+      </div>
+      
+      <div class="col-md-12 ">
+          <label>Aplicación de interés: </label>
+          <div class="form-group text-center">
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="carnicos" value="option1">
+                  <label class="form-check-label" for="carnicos">Cárnicos</label>
+              </div>
+              <!-- <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="lacteos" value="option2">
+                  <label class="form-check-label" for="lacteos">Lácteos</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="reposteria" value="option1">
+                  <label class="form-check-label" for="reposteria">Repostría</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="panificacion" value="option2">
+                  <label class="form-check-label" for="panificacion">Panificación</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="confiteria" value="option2">
+                  <label class="form-check-label" for="confiteria">Confitería</label>
+              </div> -->
+          </div>
+      </div>
+
+      <div class="col-lg-12">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" placeholder="Escriba su mensaje" row="5"></textarea>
+      </div>
+      <hr>
+      <div class="col-lg-12 form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="politicas" value="politicas" name="policies" [(ngModel)]="policies">
+          <label class="form-check-label" for="politicas">He leído y acepto las <a routerLink="/politicas-privacidad" target="_blank">políticas de tratamiento de datos.</a></label>
+      </div>
+      <div class="col-lg-12 form-group mt-3 text-right">
+        <button class="btn btn-outline-secondary mr-1" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button class="btn btn-primary" [disabled]="!policies">
+          Enviar
+        </button>
+      </div>
+    </div>
+  </form>
+</div>  

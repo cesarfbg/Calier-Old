@@ -1,0 +1,50 @@
+<section class="page">
+    <!-- ***** Page Top Start ***** -->
+    <ng-parallax img="assets/images/photos/parallax.jpg" [config]="{speed: .4, initialValue: 150}" class="ng-parallax-cover">
+        <div class="cover">
+            <div class="page-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Plataforma de Negocio: {{aplication|titlecase}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-parallax>
+
+    <!-- ***** Page Top End ***** -->
+
+    <!-- ***** Page Content Start ***** -->
+    <div class="page-bottom">
+        <div class="container">
+            <div id="accordion_master">
+                <div class="card" *ngFor="let categoryList of categoryListArr|keyvalue ; let k = index">
+
+                    <div [attr.id]="'collapse_' + k" class="collapse show" [attr.aria-labelledby]="'heading_app_' + k" data-parent="#accordion_master">
+                        <div class="card-body">
+                            <div [attr.id]="'accordion_child_' + k">
+                                <div class="card" *ngFor="let category of categoryList.value|keyvalue; let i = index">
+                                    <div class="card-header" [attr.id]="'heading_cat_' + i">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapse_child_' + i" aria-expanded="true" [attr.aria-controls]="'collapse_child_' + i">
+                                                {{category.value}}
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div [attr.id]="'collapse_child_' + i" class="collapse" [attr.aria-labelledby]="'heading_cat_' + i" [attr.data-parent]="'#accordion_child_' + k">
+                                        <div class="card-body">
+                                            <app-productos-cards class="w-100" [showCategory]="category.value"></app-productos-cards>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Page Content End ***** -->
+</section>
