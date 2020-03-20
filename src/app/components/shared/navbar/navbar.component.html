@@ -7,7 +7,7 @@
             <i class="fa fa-phone"></i> (57-1) 8697790
         </div>
         <div class="col-lg-6 col-md-6 text-right m-0 p-0 pr-4" [ngClass]="{'animated pulse faster': pulseFlag}">
-            <span class="bg-danger p-2 m-0 rounded text-white">
+            <span class="bg-danger-i p-2 m-0 rounded text-white">
                 Tasa promedio mes actual: <b class="h5">$ {{ trmPromedio }}</b>
             </span>
         </div>
@@ -24,6 +24,11 @@
 
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
+                        <li class="rounded p-2 bg-danger-i d-block d-lg-none" [ngClass]="{'animated pulse faster': pulseFlag}">
+                            <a class="hover-clickable bg-danger-i text-white" style="background-color: #dc3545 !important; color: white !important;">
+                                Tasa promedio mes actual: <b>$ {{ trmPromedio }}</b>
+                            </a>
+                        </li>
                         <li><a [routerLink]="[ '/inicio' ]" class="navLink">Inicio</a></li>
                         <li class="submenu">
                             <a>Productos</a>

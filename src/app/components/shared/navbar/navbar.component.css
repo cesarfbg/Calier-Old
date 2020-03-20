@@ -1,4 +1,13 @@
 @charset "UTF-8";
+
+.hover-clickable {
+  cursor: pointer !important;
+}
+
+.bg-danger-i {
+  background-color: #dc3545 !important;
+}
+
 p.contact-info {
     padding: 5px 10px;
     font-size: 14px;
