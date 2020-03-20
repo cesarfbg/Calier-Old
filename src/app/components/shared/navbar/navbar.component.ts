@@ -9,12 +9,16 @@ import { HttpClient } from '@angular/common/http';
 export class NavbarComponent {
 
   trmPromedio: string;
+  pulseFlag = false;
 
   constructor( public http: HttpClient ) {
     this.http.get('https://www.datos.gov.co/api/id/32sa-8pi3.json?$query=select%20*%20order%20by%20`unidad`%20asc%20limit%2020')
       .subscribe((tasas: {valor: string, unidad: string, vigenciadesde: string, vigenciahasta: string }[]) => {
         this.trmPromedio = this.calcularPromedioTRM(tasas);
       });
+    const pulsetimer = setInterval(() => {
+      this.pulseFlag = !this.pulseFlag;
+    }, 600);
   }
 
   calcularPromedioTRM(tasas: {valor: string, unidad: string, vigenciadesde: string, vigenciahasta: string }[]) {
@@ -38,7 +42,7 @@ export class NavbarComponent {
         break;
       }
     }
-    return ( this.sumarArray(tasasArr) / tasasArr.length ).toFixed(2);
+    return ( this.sumarArray(tasasArr) / tasasArr.length ).toFixed(0);
   }
 
   sumarArray(tasas: number[]): number {

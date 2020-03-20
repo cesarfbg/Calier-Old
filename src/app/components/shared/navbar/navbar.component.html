@@ -1,12 +1,19 @@
+
 <!-- ***** Header Area Start ***** -->
 <header class="header-area">
-    <div class="container">
-        <p class="contact-info">
+    <div class="row mb-0 pb-0 mx-5 mt-3 px-5 d-none d-lg-flex">
+        <div class="col-lg-6 col-md-6 m-0 pb-0 pl-3">
             <i class="fa fa-envelope"></i> info&#64;<strong class="text-secondary">caliercolombia</strong>.com &nbsp;&nbsp;
             <i class="fa fa-phone"></i> (57-1) 8697790
-            <i class="fa fa-dollar ml-3"></i> <b>TRM Hoy: ${{ trmPromedio }}</b>
-        </p>
-        <div class="row">
+        </div>
+        <div class="col-lg-6 col-md-6 text-right m-0 p-0 pr-4" [ngClass]="{'animated pulse faster': pulseFlag}">
+            <span class="bg-danger p-2 m-0 rounded text-white">
+                Tasa promedio mes actual: <b class="h5">$ {{ trmPromedio }}</b>
+            </span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-0 mt-0">
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
